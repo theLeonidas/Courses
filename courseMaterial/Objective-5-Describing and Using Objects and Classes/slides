@@ -1,0 +1,34 @@
+What is data type
+static type vs dynamic type languages Java/Javascript
+
+Java has two fundamental kinds of data types: primitive and reference .
+
+primitives - 
+  numeric data types - byte short char int long float double boolean
+  Ranges - Diagram
+  range circling- > negative to positive
+  
+  char data type  " is an integer type , stores integre , non negative , unicode character.
+  float and double store large but imprecise values. Java follows IEEE
+  754 standard . You may go through it to learn more but it is not required for
+the exam.
+  
+  void
+  
+Primitive data types as building blocks for reference types
+
+Size of primitive vs reference
+
+The exam expects that you know them all. Although Oracle have
+substantially reduced the number of questions that are based solely on quirky
+syntax, you may still see weird syntax used in code snippets in questions that test
+you on something else.
+
+pass by value , pass by reference
+
+by default a decimal value is of type double, in order to explixitly make a decimal value as float or double we write f & d notations
+
+Declare and initialize variables (including casting
+and promoting primitive data types
+
+equality operator on complex types
