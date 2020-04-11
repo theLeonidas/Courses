@@ -11,6 +11,9 @@
     <modules>
         <module><![CDATA[Operators&Decision]]></module>
         <module>DataTypes</module>
+      <module>ClassesAndObjects</module>
+        <module>Modules</module>
+      <module>Arrays</module>
     </modules>
 
     <name>ocp</name>

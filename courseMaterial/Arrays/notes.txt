@@ -1,0 +1,65 @@
+Every element of the array is also initialized to its default value
+automatically by the JVM
+
+Visually, the declaration looks like iaa is a two-dimensional matrix of ints. But
+in reality, iaa points to a single dimensional array, where each element of the
+array is an array of ints.
+
+But in case of an array of array of ints, you can only allocate 2 continuous
+memory addresses to store two references - one for each array of ints. These two
+references can, in turn, point to two arrays of different lengths.
+
+Playing around with multi D arrays
+
+Since the array of
+arrays are not required to be symmetric, such arrays are called "jagged arrays"
+
+int[][] iaa = new int[][]{ new int[]{ 1, 2 } }; This
+statement uses an array creation expression coupled with array initializer.
+int[][] iaa = { { 1, 2 } }; This is the same as above but with
+array initializer
+
+Object[] obj[] = { {"string is also an object"},
+{null } , { new Object() , new Integer(10)} };
+obj refers to an array of array of objects.
+
+public class TestClass
+{
+public static void main(String[] args) {
+Object[] iaa[] = { {"string is also an object"
+}, {null } , { new Object() , new Integer(10)} };
+for(int i=0; i<iaa.length; i++){
+System.out.println("Element["+i+"] contains
+an array of length "+iaa[i].length);
+for(int j = 0; j<iaa[i].length; j++){
+System.out.println(" Element["+i+"]["+j
++"] contains "+iaa[i][j]);
+}
+}
+}
+}
+
+
+explained earlier that every array is an object. This means, you can assign any
+array object to variable of type Object . Like this:
+int[] intArray = new int[]{ 0, 1, 2 };
+Object obj = intArray;
+
+
+
+Array of primitives and references
+
+
+Difference between Object = [] & Object[] = []
+
+array object to variable of type Object . Like this:
+int[] intArray = new int[]{ 0, 1, 2 };
+Object obj = intArray;
+This is valid because an array of int s is an Object .
+Then how about this - Object[] oa = intArray; ? This will not compile
+because elements of the array pointed to by intArray are not Object s. They
+are int s. Therefore, you cannot assign an array of int s to a variable of type
+array of Object s.
+You need to be very clear about this concept because it gets confusing very
+quickly as the following example shows:
+
