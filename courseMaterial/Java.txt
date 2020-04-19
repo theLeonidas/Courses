@@ -1,0 +1,17 @@
+
+A mini java based http server
+A stream data reader
+
+Java knowledge - stackoverflow - 5k reputation
+
+architechtural knowledge + leetcode
+leetcode - solve all questions
+
+Java revision + stackoverflow + 
+
+Algorithms -
+
+
+Java data structures
+blockingqueue
+executor service internal implementation
