@@ -14,6 +14,10 @@
       <module>ClassesAndObjects</module>
         <module>Modules</module>
       <module>Arrays</module>
+        <module>Encapsulation</module>
+        <module>JavaStrings</module>
+        <module>Methods</module>
+        <module>Exception</module>
     </modules>
 
     <name>ocp</name>
