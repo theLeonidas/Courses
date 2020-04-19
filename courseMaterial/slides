@@ -32,3 +32,5 @@ Declare and initialize variables (including casting
 and promoting primitive data types
 
 equality operator on complex types
+string concatenation using + & += operators
+increment/decrement operators on wrappers
