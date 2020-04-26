@@ -1,0 +1,8 @@
+All basic operators ... like arithmatic logical ternary etc.
+xpression n statements
+Operator precedence
+Assocativity
+
+
+switch 
+loops
