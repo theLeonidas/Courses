@@ -1,3 +1,0 @@
-module temperatureConverter{
-  requires calculatorModule;
-}
