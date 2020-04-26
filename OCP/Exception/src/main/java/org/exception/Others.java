@@ -81,5 +81,5 @@ public class Others extends SuperClass implements Feature{
         }
     }
 
-    private void nestedExceptions() {
+    private void nestedExceptions() {}
 }

@@ -18,6 +18,7 @@
         <module>JavaStrings</module>
         <module>Methods</module>
         <module>Exception</module>
+        <module>Inheritance</module>
     </modules>
 
     <name>ocp</name>
