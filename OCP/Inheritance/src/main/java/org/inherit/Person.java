@@ -1,5 +1,7 @@
 package org.inherit;
 
+import java.io.IOException;
+
 public class Person {
     public String name;
     public Integer age;
@@ -32,5 +34,9 @@ public class Person {
         builder.append("I am " + this.age + " years old.")
                .append("I am a " + this.gender) ;
         return builder.toString();
+    }
+
+    public void hello()throws IOException{
+
     }
 }

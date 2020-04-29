@@ -1,5 +1,9 @@
 package org.inherit;
 
+import java.io.EOFException;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 //An employee is a person.
 //In order for a class to inherit from another class
 //it needs to declare it using "extends" clause.
@@ -67,5 +71,14 @@ public class Employee extends Person{
         Employee.personCount = 88;
         //Person also reflects the changed value of personCount.
         System.out.println(Person.personCount);
+    }
+
+    @Override
+    public void hello() throws FileNotFoundException,EOFException {
+        if(1==1)
+        throw new FileNotFoundException();
+
+        if(1==1)
+        throw new EOFException();
     }
 }
