@@ -1,0 +1,43 @@
+Objective - 1 
+
+Hello Everyone, 
+Welcome to this course on learning essentials of java.
+Let me first introduce myself. My name is Salil Misra and I have been working in IT industry for close to 10 years now. My major areas of working
+are in Java and its related technologies.In free time I love to play cricket, read about hisory watch a movie or two.
+Lets now have introduction from all of you.Lets start in alphabetical order.
+
+Ok great,now some brief about the course.
+
+In this course we shall be covering Java and would be preparing for 
+a certification on Java.Java certification is known as Oracle certified professional and is a two part certification.OCP certification
+consist of two exams OCP-1 & OCP-2.Only once both exams are cleared are we eligible to be called as Oracle certified professional.
+I would be sharing a PDF which would elaborate on the exact exam requirements and what all the exam covers.Apart from this I would be covering all the topics on the exam in our sessions.
+One of the freat source of learning java is coderanch.This is website for all java programmers , to learn & explore more about java.
+This site also elaborates a lot on Java certification. Many people who take the certification exam share their experiences over the site.
+So it is definatly a a very good site for learning about Java and the certification.
+
+So lets begin now.
+I would like clarify that at any point if you feel you have some questiosn please feel free to ask them and never hesitate.
+The more you ask, more will it be helpful.
+So First I shall begin with some introductions.
+
+1. Introduction to programming languages.
+   -> Speak about computers understanding.
+       -> As we all know that a computer is an an electronic device and it understands the language of 0 & 1. We refer to this as binary language.
+   -> Speak about how humans interact.
+	   -> Humans on the other hand converse in various languages like hindi ,english sanskrit etc.
+   -> Speak on difference between the language of human and computer and how programming language solves the problem.
+       -> We come to this conclusion that humans and computers both are in terms of language far apart.To solve this deadlock we have the programming   languages.Using a programming language a programmer is able to express himself in terms of a language that he understands. Special programs like the compilers then convert the code written by the programmer into a machine readable format.This format is something that the computer can understand.This results in a win-win situation for all.The programmer is able to express himself in his own language while the computer is able to understand all this in his own language of 0 & 1.
+   -> Speak on Java as a programming language.
+       -> One such programming language that we are studying in this course is Java. Befor starting lets have some history bytes about Java.
+	      Java language project was initiated by James Gosling, Mike Sheridan and Patrick Naughton while working at Sun Microsystems.The language was initially called as Oak bacause one of the developer, James Gosling,had an OAK tree just in front of his office.Later on it got renamed to project Green and finally it got the name, that it has today which is Java. Java coffee is one of the famous coffee that originated from island of Java in the country of Indonesia.
+   -> Speak on syntax of Java & WORA
+       -> James gosling wanted to implement a C++ syntax like language.The first public implementation of the java programming language was released in the year 1995. It was Java 1.0.
+	   -> One of the key features of Java programming language is Write Once and Aun Anywhere(WORA).This means that a java program once compiled can be run on a variety of platforms.THis was one of the major drawback with which languages like C/C++ sufferreded.Languages like C/C++ once compiled can only be run on the platformd for which compiler was written.
+	-> Speak on Sun & acquitision by Oracle.
+       -> Java for much of its initial years was owned by Sun Microsystems.But with the coming of 2010 Sun Microsystems was gradually acquired by Oracle corporation.
+	-> Speak on end of this part and start of new topic.
+       -> This was in brief history of Java in last about 25 years.Now lets move on to learning Java in more depths.
+	   -> Questions ? 
+	   
+2.  

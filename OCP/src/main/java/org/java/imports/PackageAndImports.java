@@ -1,12 +1,12 @@
 //This is a package statement.
 package org.java.imports;
 
+//To import a specific class use the fully qualified name.
+//import org.java.other.UseMe;
+//import org.java.other.UseMe1;
+
 //To import all classes from a package use wildcard '*'
 //import org.java.other.*;
-
-//To import a specific class use the fully qualified name.
-import org.java.other.UseMe;
-//import org.java.other.UseMe1;
 
 //This shows classes in default package cannot be imported.
 //Either by naming the class explicitly
