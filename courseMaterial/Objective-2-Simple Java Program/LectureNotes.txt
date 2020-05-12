@@ -54,6 +54,11 @@ So First I shall begin with some introductions.
 	  So enough of stories, now lets look into actually running some java program and see what it does.For this we first need to look at the steps needed to write and run a Java program.
 
 3. Basics of a Java program.
+    -> Order of code : 
+	    -> Main method : org.java.ProgramExecution
+		-> CMD args : org.java.commandline.CommandLineArguments
+		-> Correct/Incorrect ways of writing main method : org.java.entrypoint.EntryPoint
+		
     -> Speak on the steps and then running a Java program.
 	   -> So the first step in the process of running a Java program is to write a Java program which does something. Lets for now write a program that prints a welcome message on the command line.So I have already written to make things easy for all of us. Lets see how a basic Java program looks like.THis if Java class named WelcomeToJava, this class contains an attribute names message and a method named printMessage().
 	   Our program creates an object of this class type named myFirstObject and sets a message in the message attribute of the object and then calls the print message method on this object. This message picks up the value of message attribute set on the myFirstObject and prints it.Simple, right? You can change message to suit your taste.Now we need to save this peice of code in a file and name it "WelcomeToJava.java".To run this program and see an output we need to first compile this program.Compilation is one of the steps in running a Java program.We shall talk about it in later slides, but for now think of it as a step that converts the human readable java file to a computer radable format.Now open a command window if your are on windows.ON this window navigate to the point where we have saved our WelcomeToJava.java file.Next Type the following : javac WelcomeToJava.java.This will compile our java file and create a .class file names WelcomeToJava.class. After this type the following : java WelcomeToJava. This shall execute our program and print the message that we desired to be printed on to the console.
@@ -61,7 +66,39 @@ So First I shall begin with some introductions.
 	   I would be sharing at the end of the session a zipped copy of the code that I am running here.
 	   Next lets see what we wrote in our WelcomeToJava.java file and try to understand what is what.
 	-> Speak on WelcomeToJava.java file contents.
-       -> If we look at our java file, it contains a package declaration named "org.java",we shall see what are packages later in detailS.For now assume it is used to group together similar type of functionality together. Ok, what next ? Next is a class declaration. As we discussed java is a class based programming language and all code in java is written inside of a class.Class has a name and in our case WelcomeToJava is the name of our class.We shall be studying in depths about classes in our coming sessions, for now this much is sufficient.Next we look into internals of  the class.
+       -> If we look at our java file, it contains a package declaration named "org.java",we shall see what are packages later in detailS.For now assume it is used to group together similar type of functionality together. Ok, what next ? Next is a class declaration. As we discussed java is a class based programming language and all code in java is written inside of a class.Class has a name and in our case WelcomeToJava is the name of our class.We shall be studying in depths about classes in our coming sessions, for now this much is sufficient.Next we look into internals of  the class. So as we can see the class contain a String data member that holds the message that we want to print.Data members basically represent data of different types.So in this program we have used String as a type of fdata.Data can be an integer or a decimal type.So if we want to write a program that prints the sum of two numbers then we will have to use data types if Integer type or DEcimal type.Here in this program we have used String as a data type which basically represents textual data.
+	   Next we have a method named printMessage() that just prints the message that we intend to print on the console.As of now just keep this in mind that whatever you need to print on the console, you will use System.out.println() syntax.As we gradually progrees in the course you will understand better abouut this.
+	   -> Speak on the main method.
+	   Next we have a method named public static void main().This one of the most important method in any Java program as any program written in java whether small or large start from this point.In the main() method we have created an object of the class WelcomeToJava and then we have set our message in the message data field.After this we have called the printMessage() method to print the message that we set.Thats all what this little piece of code does.
+	   
+	   -> Show them all this by running' the code.main().
+	   
+	-> Speak on the Command line arguments.
+	   -> While running a program you may wish to pass on some data to the program from outside.It could be the message you wish to print or in case if the program is about adding two numbers then you could pass in the numbers to be added to the program. For our case lets try to pass in the message that we wish to print on the console.This can be done by a very small modification to our program.As we have already seen that in the main method we get a string as an input.If you see carefully, it is not just String rather the String has square brackets suffixed to it.These square brackets refer to an array.You can understand an array as some container of many String data types.This means this array can store many Strings.Each String in the array is indexed, that means each String has a unique index to it using which yiou can access the String stored at that index.
+	       
+	        Demo : \OCP\src\main\java\org\java\commandline\CommandLineArguments.java
+			Run the java program by passing arguments in command line .Show them these command line parmaeters by accessing them.These indexes start from 0. Tell that in main args is name of array which holds many Strings.Use index to access a string.
+		   -> Access the arguments using single indx, 0,1,4,6,8 or show them to access the entire array using
+		   -> Show them ways of passing command arguments and how they map to the array.
+		-> Tell tehm about different ways of writing the main method.Correct ways and the incorrect ways.
+     		-> org.java.entrypoint.EntryPoint
+		   -> Tell them that as we go deeper in the class we shall be able to better grasp these things.We shall have to be regularly be doing these.
+		   
+	->  Speak on the compile step.
+        -> 	Okay one of the mysteries about java was the tool javac.This is the java language compiler.It converts the human readable java programming language into intermediate format known as the bytecode.The source file as we saw is written and saved in a .java format.Afterwards we use the javac tool to compile the .java and then an intermediate format is generated in .class file.
+	    -> Open and show the .class file , how it contains content which are not human readable.Open it in  notepad.
+		This intermediate format referred to as byte code is what makes java a platform independent language.This code can be taken to any operating system and be executed without having to recompile again.So basically you do not need to compile the code again and again.
+	    Why is this importa4nt ? 
+	-> Speak on the pre-java world of C++
+       -> Java has been greatly inspired by languages like c/c++ .But one of the major things that C/C++ did not have was that it was very much    platform dependent.	This means thhat code written in C/c++ when compiled can only be executed in the same platform on which it was compiled.
+	   -> Exaplin further from figure.
+	   -> In java however ewe do not have this drawback and java code once compiled can be run on any platform without hacing to recompile.
+	   -> Explain why this feature was benefecial.
+	   -> Explain using the figure.
+	-> Speak on java tool /JVM.
+       -> We also used the java tool .This tool is used to execute our bytecode.This tool is also referred to as Java virtual machine 
+       -> Explain it from the figure.
+	->    
 	   
 4. Java Features.
 	-> Speak on OOPs.
@@ -71,4 +108,24 @@ So First I shall begin with some introductions.
 	  Like this there can be many example like a class of Animal, a class of Plants, a class of bikes.
 	  Next we move on to another important feature that we have already discussed which is Write once run anywhere.
 	-> Write Once and run Anywhere	
+	  -> We have already discussed , how java is different from the languages like C/C++ in terms of being platform independent.
+	-> Speak about JDK tool in total.
+      -> In the java download step , we had downloaded the software that installs java on our system.
+	      -> REferred to as Java development kit (JDK)
+		  -> JDK -> comes with many tools and library classes
+		  -> Classes are referred to as Application programming interface or APIs.
+		  -> There are somew tools bundled with JDK,
+		  -> See tools in the slide and explain.
+		  -> JDK = combibation of JRE + TOOLS
+		  -> JRE = JVM  + utility classes 
+	-> Speak on Java language specifications.
+      -> As we talked that java is a human readable programming language.As every language has a set of rules and grammar similarly, 
+	     jav also has its own grammar. This document which defined the java language grammar is called as java language specification.
+		 Similarly there exist a specification that defines hwo the java code executor JVM should be.Like Hotspot VM is an example.
+		 
+		 -> EXPLAIN what is specification and what is actual implmenteaiton
+		 
+	> Speak on Garbage collection
+      -> Explain how languages prior to java managed memory,like allocation and deallcoation was managed by the developer itslef.The languages caused a memory leak.
+	  ->Speak how java resolved above problem , by giving a GC. What is GC , we cant call GC directly, can only ideicate.
 	  
