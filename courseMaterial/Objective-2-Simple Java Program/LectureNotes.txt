@@ -114,6 +114,7 @@ So First I shall begin with some introductions.
 	      -> REferred to as Java development kit (JDK)
 		  -> JDK -> comes with many tools and library classes
 		  -> Classes are referred to as Application programming interface or APIs.
+		      - > For this open Intellij and show them the JDK classes. -> rt.jar -> Show differnent packages and classess.
 		  -> There are somew tools bundled with JDK,
 		  -> See tools in the slide and explain.
 		  -> JDK = combibation of JRE + TOOLS
@@ -123,7 +124,7 @@ So First I shall begin with some introductions.
 	     jav also has its own grammar. This document which defined the java language grammar is called as java language specification.
 		 Similarly there exist a specification that defines hwo the java code executor JVM should be.Like Hotspot VM is an example.
 		 
-		 -> EXPLAIN what is specification and what is actual implmenteaiton
+		 -> EXPLAIN what is specification and what is actual implementation
 		 
 	> Speak on Garbage collection
       -> Explain how languages prior to java managed memory,like allocation and deallcoation was managed by the developer itslef.The languages caused a memory leak.

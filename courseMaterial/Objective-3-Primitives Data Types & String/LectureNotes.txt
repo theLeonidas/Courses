@@ -1,0 +1,107 @@
+Ok , lets quickly get started.
+
+-> Speak on data types.
+    ->  Everyone must have bought groceries.For weighing things we have standard size weights like milligram,gram and kilogram.And we refer all wights in tersm of these satndard size weights.Entire ecosystem undersatnds meaning of these weights and there is no problem when a person from India asks
+	for 5 kg of sugar from a retailer.
+    -> Lets come to the programming ecosystem.	
+    ->  Programming is all about computation.Computation on what ? Obviously data. So this whole world of computers revolve around data and   computation on that data.Data can be of various types.Like it could be textual data, integral data, decimal data.
+	-> Similar to the concepts of weights that we discussed , in java we have the concept of data types.These are standard size data containers, that the compiler understands.
+	-> Show slide.
+	-> So java has couple of data types that meet most of the developer requirements.These data types are referred to as primitive data types.
+	-> Why primitive ? Can somebody guess ? Any wild guess ? 
+	-> Ok, so these are called primitive because these are the smallest possible data containers possible in java. Many other data types can be built in java using these basic building block data types.We shall see that later.
+	
+	->Speak on hierarchy of data types.
+	    -> Show slide -> Data type hierarchy
+	
+    -> Speak on Numeric data types
+        -> Show slide, tell the ranges , number of bytes
+		-> Is everyone aware of binary number system. ? If yes just tell the data type size in terms of byte size.
+		    -> Since data on disk is stored in tersm of 0 & 1 , hence each integeral value is represented in terms of its binary representation.
+		       So each data type has a binary size.Which says in length of how many 0 &  1 would the data be stored.
+			-> org.run.PrimitiveDataTypesRanges show all data types.   
+    
+    -> Speak on Char data type
+        -> Char is also a integral data type.Read from slides.
+		-> Ask them to read on encoding systems & unicode character sets.Take help of wiki , its a good source.If you dont understand something we can discuss more it.
+		-> org.run.PrimitiveDataTypesRanges show all data types.   
+		
+	->  Speak on Decimal data type
+	    -> Show slide.
+		-> Tell them that decimals are represented as IEEE 754 Floating point standard.Read more on wiki about the IEEE754 standard on wioki.
+		-> org.run.PrimitiveDataTypesRanges show all data types.   
+		
+	-> Speak on boolean data type
+        -> 	Show slides.
+		-> org.run.PrimitiveDataTypesRanges show all data types.   
+		->  Show calculator example for decision making. How basd upon user input, if else was appied to make a decision as to which operation is asked for and then accordingly perform thta operation.
+		    -> Parent module mein - > org.java.calculation.Calculator
+    -> Speak on User defined Data types
+	    -> Till now we have studied about the primitive data types.Now on we shall look into user defindee data types.If user sees the need that the current set of data types that java provides is not sufficient for his needs he can build his own defined data types.
+		-> Instead of keeping data baout a customer segregated , in different data types, class/user defined data type apporach gives us a way to organizat the data to suit the needs of our work.  
+		-> A class represents such a user defined ddata type.
+		-> So lets see for an example say horizon.com,which is our e-commerce company , decidess to represent data for its customers.Since the customer data of horizon.com can be very large and can have many attributes ,so IT engineers at horizon.com decide to build a user defined data type.
+		   -> Show the example at org.dataTypes.reference.Customer
+		       -> How Customer of horizon.com is represented and how it contains different primitive data types.
+			   -. Even if you dont understand , what is a method , jus try to understand in a very basic sense, and if you look closely its very intuitive , what we think and do in daily lives its almost similar to that.
+	    ->Speak on objects,
+		    -> So if you see the class Horizon , it decalares a list of Customers, for ex, Alex customer, Robert customer, Salil customer etc all are 
+			   customers of Horizon.com and and are added one by one into horizon.com.
+			-> So here each instance of the data type customer, is called an object.
+			-> Speak on members of class.Including data members and methods.
+	-> Speak on Types of variables : 
+	    -> In java you can decalare 2 types of variables : primitives and references.As we have already discusses that data types are nothing but the containers in which java stores data. So primitive variables are those that contain primitive values like int,float,long,double etc. On the other hand we also studied about user defined data types.Like we studied the example of a customer data type within an ecommerce company name horizon.com.So those variables that hold the value of user defined data types are referred to as references.They are not like usal primitve type variables.They are treated differently. Take for an example of a kite flying in the sky.What do you do if you want the flying kite to go to the left ? Anyone ?
+	    -> sO WE basically control the kite through a thread, and when the kite changes its face towards the left we pull the thread with all force towards ourselves, this causes the kite to move to the left.Similarly for other movements of the kite.If you observe in this example the the person holding the thread is not exactly the kite himself, rather he holds a pointer that controls the thread, and when the kite flyer wants to move the kite in the sky he uses the pointer to do it. Similarly is the case with references.
+        -> Code example : org.dataTypes.reference.References
+		    -> In order to create an object user defined data type , we use the new keyword.This is unlike primitives where we just use the variable type , variable name and assigning a value to it.
+			-> If we undersatnd about references, we can also understand that if a reference does not point to any object, then that means it points to nothing.In terms of our kite example,This means that currently the string does not point to any kite. In java depict this situation through use of speical literal value referred to as "null"
+			   -> Null precisley says that the reference does not point to an any user defined object type.
+			   -> So in our case we have a Customer reference that points to a null. It may be the case that customer reference at present point to a null but in future through an assignment operator we can assign a proper customer object to this refernece.
+			   -> It is also noticeable that a Customer reference can point only to a customer object.It cannot point to an object of some other unrelated class, but it can point to classes in the same inheritance hierarchy as that of Customer.Inheritance is an important concept in  OOPs and whe shall discuss it later. 			   
+			   -> Use paint to draw reference and objecct scenarios.
+			   -> Play with refence and object in this example an make them guess things.
+			   -> there are also many memory aspects of reference and object.How a reference and objects allocated memory.We shall cover these things later in depths.
+	-> Speak on literals & keyword.
+        ->  All values in java are called as literals.Like these shown in the slides.These are like constants.Corresponding to every data type there are literals.
+		-> What all integral data types are there in javaa ? Ask them and let them answer.
+		-> So lets see integral data type first.What are integral data types ? Anyone wou;d like to answer ? 
+		Any numeric literal which does not have decimal point is considered to be an integer.
+		In java we have byte,short,char,int,long are the integral data types based on the size of fthe literal.Of these int is the default.This means that if you use an integral literal anywhere, it will be assumed to be an int.
+		-> Explain literals from each data type using slides.
+		-> Code example : org.dataTypes.primitive.LiteralsAndKeywords.main() method.
+		-> Show example of byte : line number : 13.
+		-> Show example of short : line number : 13.
+		-> For long , first show the assignment at line number 27 , its an integral value with Integer.max, so it is allowed, but can abyone tell what happens if i assign a value plus to the previous integral value , means integer_max =2147483647 and we assign integer_max+1;
+		-> Ask teh students.
+		-> In this case since range of int data type is exceeded m hence compiler raises and error.This is not assignment error rather it is an Integer too large error.So to handle long values which can be larger than int range, long literals are denoted with a small l.
+		-> Similarly of decimal data type , float and double. Floats are the general 
+	-> Speak on defining and initializing variables.
+        ->  Just like a photographer before going out for capturing the beauty of the nature on a weekend trip prepares his camera, clears his memory so that he is best prepared for his trip.Similarlyis the case for a bike rider preparing for a bike ride over the weekend.
+		Similarly while coding, we tend to prepare our environment needed for runing our programs.So that when the actual computation happens we are fully ready and do not run into any sorts of errors.For this java enforces certain rules of variable declaration and initializzation which makes out journey to write and execute a java code error free.
+		-> Show code org.run.DeclareAndInitializeVariables
+		-> Show only declaration,declaration with initializing and declaration and initializzation separated.
+		-> Invalid ways of initializing.
+		-> It is an error if the compiler finds that a variable has been used but not declared or has been declared and used but has not been initialized.
+	-> Speak on Default Values    
+	    -> There are 2 places a variable can be declared, one is insode of a method and other as a data member of the class.We have already known that compiler forces every variable to be decalared and initialized.This rule applies only to the local members of a method.
+		-> USe code in org.dataTypes.DefaultValues.localDefaults() method to explain the above point.
+		-> Speak on default alues for class data members.
+		    -> For members of a user defined data type or a class, jvm sets the default values for these and the hence compiler does not complain about it.
+			-> So just like when we buy our mobile phones , it comes with the default factory settings, these are those settings that you can say is the most healthy state of the phone where all the things are initialize to their most healthy state.
+		     Similarly in java, JVM sets the values of the data member of the class to their default values when a program starts.Later on during the execution the values of the datta members may change but initially they all are set to their corresponsign default values.
+			-> So now you can ask , what are the exact default values of the data members to which they are initailized? Well it is easy ot guess.
+			   -> Show org.dataTypes.DefaultValues.complexDefaults() method and what are the default values of each data members.
+			   -> Complex Type members of the class are initialized to null as default value.
+			-> Continue here   
+	-> Speak on primitive assignments.
+        -> Till now we have understood ways by which we can initialize variables in java.This assignment usually happens by the way of the assignment operator.While assignment values of one type on the right hand side of the operator get assigned to values of other types present on the left hand side of the operator.Here we only speak about the primitive data types and regarding user defined data types assignments we shall study later in our course.
+		-> So for primitive type assignment it may happen that, values that are being assigned might differ from those to which they are being assigned.Yes , is it possible , do you understand what i mean to say ? 
+		-> Lets take an example to better understand this.At the petrol tank, there are containers of varying sizes, some smaller of 5,10,20,50,100 mk sizes and other still larger of 250,500,1000,2000 ml sizes.	Now there are two things that you need to understand. 	If from a smaller sized petrol container you drop the petrol to a larger size container , then what is that?? It is like that you are widening the same 10 ml of petrol while dropping it into a 500ml petrol container.On the other hand if you try to drop petrol from a 500ml container into a 10ml container, what will happen ? Anyone ? Yes , the petrol will spill off, right ? how much petrol would be present in the 10ml container at the end, anyone ? 10ml , right ? what will happen to the rest of the petrol from the 500ml container ? it will spill off as the 10ml cointainer wont be able to contain such large quantity of petrol.
+		-> Similar to this example happens in java , during assignment.Think of it as value from the right hand side container are being poured into the container on the left hand side of the container.So what shall happen, you already know it.Lets take deeper look and try to understand.
+		-> When assigning a value from right to left , only three cases are possible : 
+		    1. both sides containers are equal capacity.
+			2. Left side container is larger, this is referred to as widening.
+			3. Right side container is larger, this is referered to as narrowing.
+		
+	-> Speak on wrapper classes
+        -> We have studied about primitive data types.With Java 5, corresponding 

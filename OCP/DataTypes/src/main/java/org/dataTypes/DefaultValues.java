@@ -1,6 +1,6 @@
 package org.dataTypes;
 
-import org.dataTypes.reference.ComplexType;
+import org.dataTypes.reference.Customer;
 
 //This showcases default values which are
 //present as member variables of a class.
@@ -21,7 +21,7 @@ public class DefaultValues {
     double memberDouble;
 
     //Complex Member
-    ComplexType memberComplexType;
+    Customer customer;
 
     public void complexDefaults(){
         System.out.println("Default Value for member byte = " + memberByte);
@@ -33,10 +33,10 @@ public class DefaultValues {
         System.out.println("Default Value for member double = " + memberDouble);
 
         //Printing default value for complex member type.
-        System.out.println("Default Value for member complexType = " + memberComplexType);
+        System.out.println("Default Value for member complex = " + customer);
     }
 
-    //This shows value of unitizlized local variables.
+    //This shows value of uninitialized local variables.
     //Local = method local
     public void localDefaults() {
 
@@ -44,9 +44,7 @@ public class DefaultValues {
         //the compiler does not give any errors.
         //But once we start using them without initializing
         //compiler starts complaining.
-        //These are the local variables of a method
-        //Hence these are not assigned any default values
-        //by JVM.
+        //These are the local variables of a method.
         byte localByte;
         short localShort;
         char localChar;
@@ -65,5 +63,11 @@ public class DefaultValues {
 //      localLong = localLong + 1;
 //      localFloat = localFloat + 1;
 //      localDouble = localDouble + 1;
+
+
+        //Similarly for user defined data types.
+        //Compiler complains that variable might not have been initialized.
+//        Customer anotherCustomer;
+//        anotherCustomer.getCustomerId();
     }
 }

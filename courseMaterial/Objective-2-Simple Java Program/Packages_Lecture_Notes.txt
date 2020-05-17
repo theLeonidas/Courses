@@ -1,0 +1,55 @@
+Next we move on to the topic, packages.
+
+-> Speak on packages general
+    -> Packages are used logical grouping of things.
+	    -> Take example of folders that we create in a browser or in the hard disk.What are they ? They are logical groupings.
+		   -> Show folders and browser.
+		    Like we create a folder related to all sports news. In that folder you could have subfolders related to cricket,
+			subfolders for tennis, subfolders for soccer etc.Within these subfolders you can eventually have news links related to each specific
+			sport.
+			    
+	-> Speak on how to declare packages
+			-> Show the calculator example.
+			     -> Similarly there can be packages in a java application.To demonstrate this lets take an example of a calculator application.
+				    You may want to someday want to develop the calculator application.This calculator might have operations for multiplication,division,addition,subtraction.So for all the classes containing code related to addition you may want to group them under addition,all classes containing code related to subtraction may be grouped under subtraction and similarly for multiplication and division.Thinking in terms of package we can group them in their own packages.
+					-> Speak with example now for calculator. 
+					-> Calculator and Result could be in calculation package.
+					-> Explain the code of how Calculator.java code works.
+	->  SPeak on import & export package.
+	        -> Now having seen the utility of packages lets now discuss how to create packages.
+			-> So how do we create packages ? Just creating folders on the disk and putting the concerned classes in specific folders does create the 
+			   pakage hierarchy. Instead, you need to specify in the java class, the name of package to which the class belongs.TO do this we need to use the package keyword.
+			-> Show code for package declaration.
+			    -> package declaration needs to be the first package in the class.
+				-> How the folders get created that we shall look in a while.
+			-> Show how to import classes from differen package.
+			    -> Use import keyword.
+			    -> Show code. for calculator.
+			-> Now let see , how after creating classses and declaring their pavkages , foler are createad.
+			     -> So from Calculator code we can see Result class does not need any other class from any other pavkages.We can say it is independet class.So we will compile this first.
+				 -> javac -d . Result.java
+				 -> explain the -d option
+				     -> Change directory.
+                 -> If you see the classes Addition/subtraction/multiplication/division all need Result class for their working.
+				     - So all these classes declare their package and also import Result class from a different pakage.
+					 -> javac -d . -cp . Addition.java similarly others
+					 -> -cp classspath option. 
+				-> 	 Similarly compile Calculator.java.
+				-> Run the Calculator class 
+				      ->  java -cp . org.java.calculation.Calculator  1 22222 33
+				           
+	-> Some points on packages 
+        -> 	Multiple imports. Shown in calculator.java file.USing * as wildcard.
+			
+    -> Speak on JDK packages and classes.
+	    -> Show in intellij the jdk packages.
+		-> java.io , java.util etc.
+	
+	
+	Questions : 
+	
+	1. Create a class with a main method and execute the class with a few arguments. Print the number of arguments
+	2. Create a class Moon in a package and another class stars in another paackage.Then import Moon class in a class contained in package containing Start.
+	3. Write a program to print names of all your family members.
+	4. Write a program to use a utility class from other JDK pavkages.Try it once.
+	5. WRite a program that uses 2 classes declared in 2 different packages.Do not use import statement and try to ahcieve this.

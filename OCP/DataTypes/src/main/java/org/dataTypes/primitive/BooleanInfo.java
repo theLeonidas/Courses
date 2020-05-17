@@ -8,5 +8,6 @@ public class BooleanInfo implements Display{
         System.out.println("Primitive type : boolean");
         System.out.println("Size : " + 1 + " bit");
         System.out.println("Allowed values : (" + Boolean.TRUE + " , " + Boolean.FALSE + ")");
+
     }
 }
