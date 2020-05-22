@@ -100,8 +100,23 @@ Ok , lets quickly get started.
 		-> Similar to this example happens in java , during assignment.Think of it as value from the right hand side container are being poured into the container on the left hand side of the container.So what shall happen, you already know it.Lets take deeper look and try to understand.
 		-> When assigning a value from right to left , only three cases are possible : 
 		    1. both sides containers are equal capacity.
-			2. Left side container is larger, this is referred to as widening.
-			3. Right side container is larger, this is referered to as narrowing.
-		
-	-> Speak on wrapper classes
-        -> We have studied about primitive data types.With Java 5, corresponding 
+			2. Left side container is larger, this is referred to as widening conversions.
+			3. Right side container is larger, this is refered to as narrowing conversions.
+			-> For equal types assignment, there is nothing much to worry about.Like int being assigned to an int , there is no issue in that.
+			   Problem could arise if have unequal types in assignments.
+			   -> Let's first see the widening conversions.
+			   -> org.dataTypes.NarrowingAndWidening.showWideningAssignments(), show examples and explain the point.
+			   ->We call them as implicit widening conversions because these do not require any extra efforts on the part of the programmer ,are allowed by the compiler  and done automatically by jvm.
+			   -> On the other hand, there are narrowing conversions.
+			   -> As we already discussed , Narrowing conversion are not natural.HEnce normally the compiler explains if we perorm them.
+			   -> Show example org.dataTypes.NarrowingAndWidening.showNarowingAssignments() line number 63-76
+			   
+			   -> Case for narrowing conversions is that, there may be that larger data type may contain a value whose magnitude is such that it could nbe accomodated into a smaller data type.EVEN THEN THE COMPILER DOES NOT ALLOW. Instead compiler puts all the responsibility of this on the programmer to do.This is because the compiler is not the one who knows what value will be assigned to the variable at runtime, at the point where assignment it can only has the confirmation of the data type of the 2 types participating in this assignment nothing else.Hence its judgement is correct considering its situation.It is the programmers call to go ahead with narrowing.This is referred to as explicit narrowing because it is not a natural act and made possible on programmers request.
+			   -> Show examples org.dataTypes.NarrowingAndWidening.showNarrowingAssignments() line numbers 78-92.
+			   -> In some of the cases implicit narrowing also happens.In cases where the comnpiler can determine the value of the variable at compile time, which meeans it knows what the exact value is , the compiler checks whether the value of the left hand side is within the numeric range of the right hand side of the assignment , if it is then it allow this type of conversions.
+			       -> Lets see some xample of these.-> line nuber 95-96.
+				-> Show example of how resultant values are after implicit narrowing.like in case of byte b1=128 (byte range -128<->127)   , resultant value is -128.Say that its like a spinning wheel.Also can explain this using modulo.
+				
+				-> SPecial casese : Now short to char and byte to char are not possible since short and byte are signed types meaning they hhold both positive and negative values.On the other hand character types are unsinged and hence comiler raises an issue. Allthiugh its still possbile through an explivit case but normally the programmer is impulsed to think that these would be allsowed pertaining to shorts's equality with character type and widening conversion in case of byte type.
+				-> Special cases   -> float to int and double to int requires explicit cast while vice versa not
+	-> Speak on compile time constants. Variables declared with final keywords.
