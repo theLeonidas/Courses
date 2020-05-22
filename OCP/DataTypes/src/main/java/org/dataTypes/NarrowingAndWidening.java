@@ -3,19 +3,13 @@ package org.dataTypes;
 public class NarrowingAndWidening {
     public static void main(String[] args) {
 
-//        showWideningAssignments();
-//        showNarrowingAssignments();
-    }
-
-    private static void showWideningAssignments() {
-    //-----------------------Widening-----------------//
-        byte byteDataType = 64;
-        short shortDataType = 177;
+        byte byteDataType = 1;
+        short shortDataType = 1;
         char charDataType = 'A';
-        int intDataType = 723634;
-        long longDataType = 9867468l;
-        float floatDataType = 12121.212f;
-        double doubleDataType = 11.121d;
+        int intDataType = 1;
+        long longDataType = 1;
+        float floatDataType = 1.0f;
+        double doubleDataType = 1.0;
 
         //IMPLICIT WIDENING CONVERSIONS.//
         //Since a smaller data type is being assigned to a larger data type
@@ -48,35 +42,8 @@ public class NarrowingAndWidening {
         doubleDataType = charDataType;
         doubleDataType = shortDataType;
         doubleDataType = byteDataType;
-    }
 
-    private static void showNarrowingAssignments() {
-        //-----------------------Narrowing-----------------//
-
-        byte byteDataType = 64;
-        short shortDataType = 177;
-        char charDataType = 'A';
-        int intDataType = 723634;
-        long longDataType = 9867468l;
-        float floatDataType = 12121.212f;
-        double doubleDataType = 11.121d;
-
-        //Compiler errors
-//        byteDataType =  shortDataType;
-//        byteDataType =  intDataType;
-//
-//        shortDataType = intDataType;
-//        shortDataType = longDataType;
-//
-//        intDataType = longDataType;
-//        intDataType = floatDataType;
-//
-//        longDataType = floatDataType;
-//        longDataType = doubleDataType;
-//
-//        floatDataType = doubleDataType;
-
-        //Explicit narrowing.
+        //NARROWING CONVERSION
         //Narrowing conversion need an explicit cast.
         byteDataType = (byte)shortDataType;
         byteDataType = (byte)intDataType;
@@ -92,7 +59,27 @@ public class NarrowingAndWidening {
 
         floatDataType = (float)doubleDataType;
 
-        //Implicit Narrowing.
-        byte b1 = 100;
+        //Conversion from byte or short to char is considered a narrowing conversion
+        //as byte or short could contain a negative number which is not representable in a
+        //char type.
+        charDataType = (char)byteDataType;
+        charDataType = (char)shortDataType;
+
+        //Similarly float & int are of same size, but assigning float to int results in loss of information
+        //& similarly for double to long.Hence compiler asks to cast explicitly.
+        intDataType = (int)floatDataType;
+        longDataType = (long)doubleDataType;
+
+        //However vice versa assignment from int to float  & long to double is allowed
+        //and happens implicitly.
+        floatDataType = intDataType;
+        doubleDataType = longDataType;
+
+        //Above rule does not apply to a assignment by the way of method calls
+        //narrowingMethodCall(122);
+    }
+
+    public static void narrowingMethodCall(short s1){
+
     }
 }

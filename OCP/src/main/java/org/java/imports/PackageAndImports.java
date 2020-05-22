@@ -1,12 +1,12 @@
 //This is a package statement.
 package org.java.imports;
 
-//To import a specific class use the fully qualified name.
-//import org.java.other.UseMe;
-//import org.java.other.UseMe1;
-
 //To import all classes from a package use wildcard '*'
 //import org.java.other.*;
+
+//To import a specific class use the fully qualified name.
+import org.java.other.UseMe;
+//import org.java.other.UseMe1;
 
 //This shows classes in default package cannot be imported.
 //Either by naming the class explicitly
@@ -24,7 +24,7 @@ import org.java.imports.SameNamedClass;
 //the exact package from which usage was intended.
 //import org.java.other.SameNamedClass;
 
-//java.lang package is automatically available to all java programs without being
+//java.lanf package is automatically available to all java programs without being
 //explicitly imported.
 
 public class PackageAndImports {
@@ -43,27 +43,27 @@ public class PackageAndImports {
 
     //Test individual import.
     public static void main(String[] args) {
-            //This does not show a compilation error
-            //because this class has already been imported.
-            //UseMe u = new UseMe();
+        //This does not show a compilation error
+        //because this class has already been imported.
+        //UseMe u = new UseMe();
 
-            //This usage will show compilation issue
-            //because it has not been imported.
-            //If import this specific class the error goes off.
-            //UseMe1 u1 = new UseMe1();
+        //This usage will show compilation issue
+        //because it has not been imported.
+        //If import this specific class the error goes off.
+        //UseMe1 u1 = new UseMe1();
 
-            //Non importable default class.
-            //NonImportableClass c1 = new NonImportableClass();
+        //Non importable default class.
+        //NonImportableClass c1 = new NonImportableClass();
 
 
-            //FQCN for one of the same named classes.
-            //org.java.other.SameNamedClass c2 = new org.java.other.SameNamedClass();
+        //FQCN for one of the same named classes.
+        //org.java.other.SameNamedClass c2 = new org.java.other.SameNamedClass();
 
-            //Since other class has been already imported hence
-            //we can directly use the class name.
-            //SameNamedClass c3 = new SameNamedClass();
+        //Since other class has been already imported hence
+        //we can directly use the class name.
+        //SameNamedClass c3 = new SameNamedClass();
 
-            //Usage from java.lang package without importing any of the classes
-            //System.out.println(Math.random());
+        //Usage from java.lang package without importing any of the classes
+        //System.out.println(Math.random());
     }
 }
