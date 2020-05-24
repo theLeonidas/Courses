@@ -1,6 +1,6 @@
 package org.java.imports.staticimports;
 
-import javax.jnlp.IntegrationService;
+
 import java.util.*;
 
 public class NonStaticImportWay{

@@ -4,9 +4,9 @@ public class EntryPoint {
     //This method should have exactly the same signature as given.
     //name of the method must be main
     //It must be declared as public & static
-    //and since it does not return anything hence has a return type of void.
+    //and sice it does not return anything hence has a return type of void.
 //    public static void main(String[] args) {
-//        System.out.println("I guard the entry to the world of Java !!!");
+//        System.out.println("I guard the enrtry to the world of Java !!!");
 //    }
 
     //Correct way of writing entry point method.
