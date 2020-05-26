@@ -1,0 +1,19 @@
+->Speak on operators
+   -> Dont speak on any operator for reference & Objects.
+   -> With some mathematical operators, give some problems to solve.
+   -> For relationals use if else wala code.
+   -> Just like in mathematics we have operators which are applied to different operands to arrive at a result similarly, in java as well we have larger
+      set of operators.We shall discuss those operators one by one.
+	-> == && != operators only for primitve and not for objects types.
+   
+-> Discuss all the operators one by one from deshmukh book.
+    -> Logical operators speak on short circuiting.
+	    -> if((30>122) && (50<24))
+		      Ssytem.out.print("Hello");
+	    -> if((value==0)&&(value=getValueFromDatabase))
+		
+	-> For4 bitwise operators binary to decimal &  decimal to binary.
+	->
+	
+		
+   

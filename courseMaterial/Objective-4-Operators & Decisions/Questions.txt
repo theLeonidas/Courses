@@ -1,0 +1,13 @@
+If else 
+1. Write a Java program that takes a year from user and print whether that year is a leap year or not. Go to the editor
+2. 
+
+Mathematical
+1. Program to find LCM & HCF of two numbers
+2. Product of given N fractions in reduced form
+3. https://www.geeksforgeeks.org/product-given-n-fractions-reduced-form/
+4. https://www.geeksforgeeks.org/gcd-digits-given-number/
+5. https://www.geeksforgeeks.org/series-largest-gcd-sum-equals-n/
+6. Fibonacci
+7. https://www.geeksforgeeks.org/mathematical-algorithms/
+8. bitwise and/or/xor functionalty through code.

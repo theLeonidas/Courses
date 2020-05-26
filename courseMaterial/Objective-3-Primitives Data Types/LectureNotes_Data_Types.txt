@@ -120,3 +120,6 @@ Ok , lets quickly get started.
 				-> SPecial casese : Now short to char and byte to char are not possible since short and byte are signed types meaning they hhold both positive and negative values.On the other hand character types are unsinged and hence comiler raises an issue. Allthiugh its still possbile through an explivit case but normally the programmer is impulsed to think that these would be allsowed pertaining to shorts's equality with character type and widening conversion in case of byte type.
 				-> Special cases   -> float to int and double to int requires explicit cast while vice versa not
 	-> Speak on compile time constants. Variables declared with final keywords.
+	
+	
+	-> 

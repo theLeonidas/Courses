@@ -1,0 +1,31 @@
+1. Design a data type for employees of your company.
+   - > empId,salary,name,Address,designation,isManager
+2. Design a data type system for an office, hwo all can be the potential member of an office , what would the data type look like.
+3.Desing a data type for an air flight. 
+    -> flightId,fromLocation,toLocation,type of seats,airhostess,seats(2d array),
+    --> Sections of a flight.economy/business.
+    -> take off time , landing time,
+       -> A seat class
+             -> seatId,color,fare,isBusiness.  
+			 
+4. Rail fare booking system.
+    -> User class
+    -> Train class
+    -> List<Seats>
+    -> Seat class
+        -> seatId,isOccupied,...
+    -> Train class
+        -> seats(2d array)
+        -> 
+
+5. Classroom design
+        -> Student , teacher, Subjects
+6. 	Phone contacts.
+7.  Banking system 
+    -> List of accounts,Account class,account holders.
+8.  Stack 
+9.  LinkedList
+10. Queue
+11. traffic control system
+12. 
+		

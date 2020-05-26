@@ -1,0 +1,75 @@
+Objective - 1 
+
+Hello Everyone, 
+Welcome to this course on ocp java certification traning.
+Let me first introduce myself. My name is Salil Misra and I have been working in IT industry for close to 10 years now. My major areas of working
+are in Java and its related technologies.
+Lets now have introduction from all of you.
+
+Ok great,now some brief about the course.
+
+In this course we shall be covering Java and would be preparing for 
+a certification on Java.Java certification is known as Oracle certified professional.OCP certification
+consist of two exams OCP-1 & OCP-2.Only once both exams are cleared are we eligible to be called as Oracle certified professional.
+I would be sharing a PDF which would elaborate on the exact exam requirements and what all the exam covers.Apart from this I would be covering all the topics on the exam in our sessions.
+
+So lets begin now.
+I would like to clarify that at any point if you feel you have some questions please feel free to ask them and never hesitate.
+The more you ask, more will it be helpful.
+So First I shall begin with some introductions.
+
+1. Introduction to programming languages.
+   -> Speak about computers understanding.
+       -> As we all know that a computer is an an electronic device and it understands the language of 0 & 1. We refer to this as binary language.
+   -> Speak about how humans interact.
+	   -> Humans on the other hand converse in various languages like hindi ,english sanskrit etc.
+   -> Speak on difference between the language of human and computer and how programming language solves the problem.
+       -> We come to this conclusion that humans and computers both are in terms of language far apart.To fill this gap we have  programming languages.Using a programming language a programmer is able to express himself in terms of a language that he understands. Special programs like the compilers then convert the code written by the programmer into a machine readable format.This format is something that the computer can understand.This results in a win-win situation for all.The programmer is able to express himself in his own language while the computer is able to understand all this in his own language of 0 & 1.
+   -> Speak on Java as a programming language.
+       -> One such programming language that we are studying in this course is Java. Befor starting lets have some history bytes about Java.
+	      Java language project was initiated by James Gosling, Mike Sheridan and Patrick Naughton while working at Sun Microsystems.The language was initially called as Oak bacause one of the developer, James Gosling,had an OAK tree just in front of his office.Later on it got renamed to project Green and finally it got the name, that it has today which is Java. Java coffee is one of the famous coffee that originated from island of Java in the country of Indonesia.
+   -> Speak on syntax of Java & WORA
+       -> James gosling wanted to implement a C++ syntax like language.The first public implementation of the java programming language was released in the year 1995. It was Java 1.0.
+	   -> One of the key features of Java programming language is Write Once and Aun Anywhere(WORA).This means that a java program once compiled can be run on a variety of platforms.THis was one of the major drawback with which languages like C/C++ sufferreded.Languages like C/C++ once compiled can only be run on the platformd for which compiler was written.
+	-> Speak on Sun & acquitision by Oracle.
+       -> Java for much of its initial years was owned by Sun Microsystems.But with the coming of 2010 Sun Microsystems was gradually acquired by Oracle corporation.
+	-> Speak on end of this part and start of new topic.
+       -> This was in brief history of Java in last about 25 years.Now lets move on to learning Java in more depths.
+	   -> Questions ? 
+	   
+2. Installing Java.
+    -> Speak on Java versions.
+	   -> Next we shall download and install java on our system. Java would be required for all our future sessions.
+	   -> Java 1.0 was release in the year 1995. Later on version 1.2,1.3,1.4 came up.With fifth version of Java, the versioning was changed to 
+	   Java 5.0.Later Java 6,Java 7 and further versions in the series were released.The latest version of Java  that is avaiable for development is Java 14 which was released on the 17th of March,2020.
+	   -> For our course we shall be focusing on Java 11 ,the latest version of Java for which Oracle is offerring a certification.
+	   -> Using the download link I am sharing with everyone,please download java version 11 on your systems.Everyone needs to do this.We first need to have java setup done on our systems and only then can we proceed ahead with the course.
+	   -> After installing java, next we need to setup java on our systems.So for this click on n the installer that you have downloaded and follow the instructions to install the JDK on your systems.The installation would ask for a path on your system where to install Java.Provide a valid path on your system where you wish to install the Java software.
+	   -> After this we need Java to be running on our command line.I hope everyone is aware what a command line is ? Basically on windows its referred to as command line and on linux/unix systems we refer to it as terminal.Its the place where we can manually run our programs.
+	   In order to make Java available on the command line/terminal, we need to set the path till <JDK Installation directory>/bin in our our environment variables.I hope everyone is aware of how to setup environment variables ? Who all know it ? If not, environment variables are the set of variable whose values are set at a common place which i shall show in a moment, and then they can be refered from anywhere in the entire system.So right click on "My Computer" and click on "properties". A window shall open up. In thois window on the left hand side there is an option names "Advanced System Settings".Click on this.This again opens a new window.On this window you shall find a button referring to environment variables.Click on this.This shall open another window. On this window,click om path, In the window that opens up click on new.There will be list of paths appearing in a new window.In this window go to the bottom and add the path that we had copied earlier.After applying the current change ,close all the windows.
+	  -> Now open a new command prompt/terminal and type "java", you shall see the output as shown in the slide.Next type the command "javac".The output should be as per the slide.These two are one of the most important commands that we will be using in whole of our course.These and commands are responsible for executing a Java program.Make sure that you have done the steps as told by me and have setup java on your machines because thse will be essential tools going forwrd in the course.
+	  So enough of stories, now lets look into actually running some java program and see what it does.For this we first need to look at the steps needed to write and run a Java program.
+
+3. Basics of a Java program.
+    -> Speak on the steps and then running a Java program.
+	   -> So the first step in the process of running a Java program is to write a Java program which does something. Lets for now write a program that prints a welcome message on the command line.So I have already written to make things easy for all of us. Lets see how a basic Java program looks like.THis if Java class named WelcomeToJava, this class contains an attribute names message and a method named printMessage().
+	   Our program creates an object of this class type named myFirstObject and sets a message in the message attribute of the object and then calls the print message method on this object. This message picks up the value of message attribute set on the myFirstObject and prints it.Simple, right? You can change message to suit your taste.Now we need to save this peice of code in a file and name it "WelcomeToJava.java".To run this program and see an output we need to first compile this program.Compilation is one of the steps in running a Java program.We shall talk about it in later slides, but for now think of it as a step that converts the human readable java file to a computer radable format.Now open a command window if your are on windows.ON this window navigate to the point where we have saved our WelcomeToJava.java file.Next Type the following : javac WelcomeToJava.java.This will compile our java file and create a .class file names WelcomeToJava.class. After this type the following : java WelcomeToJava. This shall execute our program and print the message that we desired to be printed on to the console.
+	   You can write this simple program and play around for sometime,change the message, print the new message.
+	   I would be sharing at the end of the session a zipped copy of the code that I am running here.
+	   Next lets see what we wrote in our WelcomeToJava.java file and try to understand what is what.
+	-> Speak on WelcomeToJava.java file contents.
+       -> If we look at our java file, it contains a package declaration named "org.java",we shall see what are packages later in detailS.For now assume it is used to group together similar type of functionality together. Ok, what next ? Next is a class declaration. As we discussed java is a class based programming language and all code in java is written inside of a class.Class has a name and in our case WelcomeToJava is the name of our class.We shall be studying in depths about classes in our coming sessions, for now this much is sufficient.Next we look into internals of  the class.
+	   
+4. Java Features.
+	-> Speak on OOPs.
+      -> One of the distinguishing features about the java programming language is that it is an Object oriented programming language.This means Java is very much modeled on the real world that we see all around us.Anything around us we can be referred to as an Object that has certain attibutes and behaviour. Similarly Java has the feature of classes and objects.
+	  For example, we have a class of Car, which has certain attributes and behaviours and then we have objects of that car class that are the actual physical representation of a car having all the attributes and behaviours that a car class has. Like an Audi A4 is an example of a concrete car.
+	  Would danyone of you like to give an example of class and an object from your life. Anyone ? 	  
+	  Like this there can be many example like a class of Animal, a class of Plants, a class of bikes.
+	  Next we move on to another important feature that we have already discussed which is Write once run anywhere.
+	-> Write Once and run Anywhere	
+<<<<<<< HEAD
+	  
+=======
+	  /
+>>>>>>> 0d64d412ef52717fb0d90b03c81b9f44d1e0500a
